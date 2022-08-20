@@ -17,3 +17,6 @@ add the executable to path
 ## running ##
 Ddd a keyboard shortcut for the command code_maker or run code_maker in the terminal.
 Press 1 to toggle use template, and enter to make the project.
+
+## note ##
+Make sure to add config.json where the executable is stored
