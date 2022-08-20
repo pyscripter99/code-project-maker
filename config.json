@@ -1,0 +1,5 @@
+{
+    "base_path": "/home/%LOGIN%/Documents/coding/",
+    "template": "/home/%LOGIN%/Documents/coding/template/",
+    "editor_command": "code ."
+}
