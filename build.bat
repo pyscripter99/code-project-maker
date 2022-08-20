@@ -1,1 +1,1 @@
-python -m pyinstaller --onefile --noconsole --name code_maker main.py
+pyinstaller --onefile --noconsole --name code_maker main.py
