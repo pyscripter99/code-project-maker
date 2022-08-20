@@ -33,6 +33,10 @@ use_template_check = Checkbutton(root, text="Use template", variable=use_templat
 use_template_check.select()
 use_template_check.pack()
 
+def close(a=None, b=None, c=None):
+    root.destroy()
+    exit(1)
+
 def toggle_template(ignore=None):
     if use_template.get() == 1:
         use_template.set(0)
@@ -47,11 +51,12 @@ def make(ignore=None):
         shutil.copytree(TEMPLATE, BASE_PATH + pj_name.get())
     os.chdir(pj_name.get())
     os.system(EDITOR_COMMAND)
-    quit()
+    close()
 
 create_btn = Button(root, text="Create", command=make)
 create_btn.pack()
 root.bind("<Return>", make)
 root.bind("1", toggle_template)
+root.bind("<Escape>", close)
 
 root.mainloop()
